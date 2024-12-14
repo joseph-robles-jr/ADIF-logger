@@ -1,0 +1,14 @@
+C:\Users\thepi\Documents\GitHub\ADIF-logger\obj\Debug\net8.0\ADIF-logger.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\thepi\Documents\GitHub\ADIF-logger\obj\Debug\net8.0\ADIF-logger.AssemblyInfoInputs.cache
+C:\Users\thepi\Documents\GitHub\ADIF-logger\obj\Debug\net8.0\ADIF-logger.AssemblyInfo.cs
+C:\Users\thepi\Documents\GitHub\ADIF-logger\obj\Debug\net8.0\ADIF-logger.csproj.CoreCompileInputs.cache
+C:\Users\thepi\Documents\GitHub\ADIF-logger\bin\Debug\net8.0\ADIF-logger.exe
+C:\Users\thepi\Documents\GitHub\ADIF-logger\bin\Debug\net8.0\ADIF-logger.deps.json
+C:\Users\thepi\Documents\GitHub\ADIF-logger\bin\Debug\net8.0\ADIF-logger.runtimeconfig.json
+C:\Users\thepi\Documents\GitHub\ADIF-logger\bin\Debug\net8.0\ADIF-logger.dll
+C:\Users\thepi\Documents\GitHub\ADIF-logger\bin\Debug\net8.0\ADIF-logger.pdb
+C:\Users\thepi\Documents\GitHub\ADIF-logger\obj\Debug\net8.0\ADIF-logger.dll
+C:\Users\thepi\Documents\GitHub\ADIF-logger\obj\Debug\net8.0\refint\ADIF-logger.dll
+C:\Users\thepi\Documents\GitHub\ADIF-logger\obj\Debug\net8.0\ADIF-logger.pdb
+C:\Users\thepi\Documents\GitHub\ADIF-logger\obj\Debug\net8.0\ADIF-logger.genruntimeconfig.cache
+C:\Users\thepi\Documents\GitHub\ADIF-logger\obj\Debug\net8.0\ref\ADIF-logger.dll
