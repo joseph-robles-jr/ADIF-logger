@@ -61,7 +61,7 @@ public class QSOarray
 
     public string returnAllAdi()
     {
-        string adifHeader = "ADIF Export\n";
+        string adifHeader = "<adif_ver:5>3.0.5\n<eoh>\n\n";
         string adifContent = "";
         foreach (Qso qso in _qsoLists)
         {

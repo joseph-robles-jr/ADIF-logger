@@ -20,11 +20,20 @@ class USB : Qso
 
     }
 
-    public override string exportAdi()
+public override string exportAdi()
 {
     string adifContent = "";
 
-    adifContent += $"<CALL:{_callsign.Length}>{_callsign}<BAND:{_frequency.ToString().Length}>{_frequency}<MODE:{_mode.Length}>{_mode}<RST_SENT:{_rstTx.ToString().Length}>{_rstTx}<RST_RCVD:{_rstRx.ToString().Length}>{_rstRx}<QTH:{_state.Length}>{_state}<TIME_ON:15>{_date}<EOR>\n";
+    adifContent += $"<CALL:{_callsign.Length}>{_callsign}\n";
+    adifContent += $"<BAND:{_frequency.ToString().Length}>{_frequency}\n";
+    adifContent += $"<MODE:{_mode.Length}>{_mode}\n";
+    adifContent += $"<STATE:{_state.Length}>{_state}\n";
+    adifContent += $"<RST_SENT:{_rstTx.ToString().Length}>{_rstTx}\n";
+    adifContent += $"<RST_RCVD:{_rstRx.ToString().Length}>{_rstRx}\n";
+    adifContent += $"<QSO_DATE:8>{_date}\n";
+    adifContent += $"<QSO_DATE_OFF:8>{_date}\n";
+    adifContent += $"<TIME:{_time.Length}>{_time}\n";
+    adifContent += $"<EOR>\n";
 
     return adifContent;
 }

@@ -1,60 +1,61 @@
 abstract class Qso
 {
 
-    protected Dictionary<string, string[]> _stateCodes = new Dictionary<string, string[]>
+protected Dictionary<string, string[]> _stateCodes = new Dictionary<string, string[]>
 {
-    { "Alabama", new string[] { "AL", "al", "Al", "aL", "Alabama", "alabama" } },
-    { "Alaska", new string[] { "AK", "ak", "Ak", "aK", "Alaska", "alaska" } },
-    { "Arizona", new string[] { "AZ", "az", "Az", "aZ", "Arizona", "arizona" } },
-    { "Arkansas", new string[] { "AR", "ar", "Ar", "aR", "Arkansas", "arkansas" } },
-    { "California", new string[] { "CA", "ca", "Ca", "cA", "California", "california" } },
-    { "Colorado", new string[] { "CO", "co", "Co", "cO", "Colorado", "colorado" } },
-    { "Connecticut", new string[] { "CT", "ct", "Ct", "cT", "Connecticut", "connecticut" } },
-    { "Delaware", new string[] { "DE", "de", "De", "dE", "Delaware", "delaware" } },
-    { "Florida", new string[] { "FL", "fl", "Fl", "fL", "Florida", "florida" } },
-    { "Georgia", new string[] { "GA", "ga", "Ga", "gA", "Georgia", "georgia" } },
-    { "Hawaii", new string[] { "HI", "hi", "Hi", "hI", "Hawaii", "hawaii" } },
-    { "Idaho", new string[] { "ID", "id", "Id", "iD", "Idaho", "idaho" } },
-    { "Illinois", new string[] { "IL", "il", "Il", "iL", "Illinois", "illinois" } },
-    { "Indiana", new string[] { "IN", "in", "In", "iN", "Indiana", "indiana" } },
-    { "Iowa", new string[] { "IA", "ia", "Ia", "iA", "Iowa", "iowa" } },
-    { "Kansas", new string[] { "KS", "ks", "Ks", "kS", "Kansas", "kansas" } },
-    { "Kentucky", new string[] { "KY", "ky", "Ky", "kY", "Kentucky", "kentucky" } },
-    { "Louisiana", new string[] { "LA", "la", "La", "lA", "Louisiana", "louisiana" } },
-    { "Maine", new string[] { "ME", "me", "Me", "mE", "Maine", "maine" } },
-    { "Maryland", new string[] { "MD", "md", "Md", "mD", "Maryland", "maryland" } },
-    { "Massachusetts", new string[] { "MA", "ma", "Ma", "mA", "Massachusetts", "massachusetts" } },
-    { "Michigan", new string[] { "MI", "mi", "Mi", "mI", "Michigan", "michigan" } },
-    { "Minnesota", new string[] { "MN", "mn", "Mn", "mN", "Minnesota", "minnesota" } },
-    { "Mississippi", new string[] { "MS", "ms", "Ms", "mS", "Mississippi", "mississippi" } },
-    { "Missouri", new string[] { "MO", "mo", "Mo", "mO", "Missouri", "missouri" } },
-    { "Montana", new string[] { "MT", "mt", "Mt", "mT", "Montana", "montana" } },
-    { "Nebraska", new string[] { "NE", "ne", "Ne", "nE", "Nebraska", "nebraska" } },
-    { "Nevada", new string[] { "NV", "nv", "Nv", "nV", "Nevada", "nevada" } },
-    { "New Hampshire", new string[] { "NH", "nh", "Nh", "nH", "New Hampshire", "new hampshire" } },
-    { "New Jersey", new string[] { "NJ", "nj", "Nj", "nJ", "New Jersey", "new jersey" } },
-    { "New Mexico", new string[] { "NM", "nm", "Nm", "nM", "New Mexico", "new mexico" } },
-    { "New York", new string[] { "NY", "ny", "Ny", "nY", "New York", "new york" } },
-    { "North Carolina", new string[] { "NC", "nc", "Nc", "nC", "North Carolina", "north carolina" } },
-    { "North Dakota", new string[] { "ND", "nd", "Nd", "nD", "North Dakota", "north dakota" } },
-    { "Ohio", new string[] { "OH", "oh", "Oh", "oH", "Ohio", "ohio" } },
-    { "Oklahoma", new string[] { "OK", "ok", "Ok", "oK", "Oklahoma", "oklahoma" } },
-    { "Oregon", new string[] { "OR", "or", "Or", "oR", "Oregon", "oregon" } },
-    { "Pennsylvania", new string[] { "PA", "pa", "Pa", "pA", "Pennsylvania", "pennsylvania" } },
-    { "Rhode Island", new string[] { "RI", "ri", "Ri", "rI", "Rhode Island", "rhode island" } },
-    { "South Carolina", new string[] { "SC", "sc", "Sc", "sC", "South Carolina", "south carolina" } },
-    { "South Dakota", new string[] { "SD", "sd", "Sd", "sD", "South Dakota", "south dakota" } },
-    { "Tennessee", new string[] { "TN", "tn", "Tn", "tN", "Tennessee", "tennessee" } },
-    { "Texas", new string[] { "TX", "tx", "Tx", "tX", "Texas", "texas" } },
-    { "Utah", new string[] { "UT", "ut", "Ut", "uT", "Utah", "utah" } },
-    { "Vermont", new string[] { "VT", "vt", "Vt", "vT", "Vermont", "vermont" } },
-    { "Virginia", new string[] { "VA", "va", "Va", "vA", "Virginia", "virginia" } },
-    { "Washington", new string[] { "WA", "wa", "Wa", "wA", "Washington", "washington" } },
-    { "West Virginia", new string[] { "WV", "wv", "Wv", "wV", "West Virginia", "west virginia" } },
-    { "Wisconsin", new string[] { "WI", "wi", "Wi", "wI", "Wisconsin", "wisconsin" } },
-    { "Wyoming", new string[] { "WY", "wy", "Wy", "wY", "Wyoming", "wyoming" } },
+    { "AL", new string[] { "Alabama", "al", "Al", "aL", "Alabama", "alabama" } },
+    { "AK", new string[] { "Alaska", "ak", "Ak", "aK", "Alaska", "alaska" } },
+    { "AZ", new string[] { "Arizona", "az", "Az", "aZ", "Arizona", "arizona" } },
+    { "AR", new string[] { "Arkansas", "ar", "Ar", "aR", "Arkansas", "arkansas" } },
+    { "CA", new string[] { "California", "ca", "Ca", "cA", "California", "california" } },
+    { "CO", new string[] { "Colorado", "co", "Co", "cO", "Colorado", "colorado" } },
+    { "CT", new string[] { "Connecticut", "ct", "Ct", "cT", "Connecticut", "connecticut" } },
+    { "DE", new string[] { "Delaware", "de", "De", "dE", "Delaware", "delaware" } },
+    { "FL", new string[] { "Florida", "fl", "Fl", "fL", "Florida", "florida" } },
+    { "GA", new string[] { "Georgia", "ga", "Ga", "gA", "Georgia", "georgia" } },
+    { "HI", new string[] { "Hawaii", "hi", "Hi", "hI", "Hawaii", "hawaii" } },
+    { "ID", new string[] { "Idaho", "id", "Id", "iD", "Idaho", "idaho" } },
+    { "IL", new string[] { "Illinois", "il", "Il", "iL", "Illinois", "illinois" } },
+    { "IN", new string[] { "Indiana", "in", "In", "iN", "Indiana", "indiana" } },
+    { "IA", new string[] { "Iowa", "ia", "Ia", "iA", "Iowa", "iowa" } },
+    { "KS", new string[] { "Kansas", "ks", "Ks", "kS", "Kansas", "kansas" } },
+    { "KY", new string[] { "Kentucky", "ky", "Ky", "kY", "Kentucky", "kentucky" } },
+    { "LA", new string[] { "Louisiana", "la", "La", "lA", "Louisiana", "louisiana" } },
+    { "ME", new string[] { "Maine", "me", "Me", "mE", "Maine", "maine" } },
+    { "MD", new string[] { "Maryland", "md", "Md", "mD", "Maryland", "maryland" } },
+    { "MA", new string[] { "Massachusetts", "ma", "Ma", "mA", "Massachusetts", "massachusetts" } },
+    { "MI", new string[] { "Michigan", "mi", "Mi", "mI", "Michigan", "michigan" } },
+    { "MN", new string[] { "Minnesota", "mn", "Mn", "mN", "Minnesota", "minnesota" } },
+    { "MS", new string[] { "Mississippi", "ms", "Ms", "mS", "Mississippi", "mississippi" } },
+    { "MO", new string[] { "Missouri", "mo", "Mo", "mO", "Missouri", "missouri" } },
+    { "MT", new string[] { "Montana", "mt", "Mt", "mT", "Montana", "montana" } },
+    { "NE", new string[] { "Nebraska", "ne", "Ne", "nE", "Nebraska", "nebraska" } },
+    { "NV", new string[] { "Nevada", "nv", "Nv", "nV", "Nevada", "nevada" } },
+    { "NH", new string[] { "New Hampshire", "nh", "Nh", "nH", "New Hampshire", "new hampshire" } },
+    { "NJ", new string[] { "New Jersey", "nj", "Nj", "nJ", "New Jersey", "new jersey" } },
+    { "NM", new string[] { "New Mexico", "nm", "Nm", "nM", "New Mexico", "new mexico" } },
+    { "NY", new string[] { "New York", "ny", "Ny", "nY", "New York", "new york" } },
+    { "NC", new string[] { "North Carolina", "nc", "Nc", "nC", "North Carolina", "north carolina" } },
+    { "ND", new string[] { "North Dakota", "nd", "Nd", "nD", "North Dakota", "north dakota" } },
+    { "OH", new string[] { "Ohio", "oh", "Oh", "oH", "Ohio", "ohio" } },
+    { "OK", new string[] { "Oklahoma", "ok", "Ok", "oK", "Oklahoma", "oklahoma" } },
+    { "OR", new string[] { "Oregon", "or", "Or", "oR", "Oregon", "oregon" } },
+    { "PA", new string[] { "Pennsylvania", "pa", "Pa", "pA", "Pennsylvania", "pennsylvania" } },
+    { "RI", new string[] { "Rhode Island", "ri", "Ri", "rI", "Rhode Island", "rhode island" } },
+    { "SC", new string[] { "South Carolina", "sc", "Sc", "sC", "South Carolina", "south carolina" } },
+    { "SD", new string[] { "South Dakota", "sd", "Sd", "sD", "South Dakota", "south dakota" } },
+    { "TN", new string[] { "Tennessee", "tn", "Tn", "tN", "Tennessee", "tennessee" } },
+    { "TX", new string[] { "Texas", "tx", "Tx", "tX", "Texas", "texas" } },
+    { "UT", new string[] { "Utah", "ut", "Ut", "uT", "Utah", "utah" } },
+    { "VT", new string[] { "Vermont", "vt", "Vt", "vT", "Vermont", "vermont" } },
+    { "VA", new string[] { "Virginia", "va", "Va", "vA", "Virginia", "virginia" } },
+    { "WA", new string[] { "Washington", "wa", "Wa", "wA", "Washington", "washington" } },
+    { "WV", new string[] { "West Virginia", "wv", "Wv", "wV", "West Virginia", "west virginia" } },
+    { "WI", new string[] { "Wisconsin", "wi", "Wi", "wI", "Wisconsin", "wisconsin" } },
+    { "WY", new string[] { "Wyoming", "wy", "Wy", "wY", "Wyoming", "wyoming" } },
     { "DX", new string[] { "DX", "dx", "Dx", "dX", "Dx", "dx", "Dx", "dX" } } // Special case for DX
 };
+
     protected float _frequency;
     protected int _rstRx;
     protected int _rstTx;
@@ -62,7 +63,7 @@ abstract class Qso
     protected string _callsign; //callsign of rx station
 
     protected string _date; //set with getDateTime()
-    
+    protected string _time; //set with getDatTime()    
     protected abstract void setRx();
     protected abstract void setTx();
 
@@ -111,7 +112,8 @@ abstract class Qso
     protected void setTime() //returns the date and time for the log
     {
         DateTime now = DateTime.UtcNow; // Format the DateTime object to the desired format 
-        _date = now.ToString("yymmdd HHmmss"); // Output the formatted date 
+        _date = now.ToString("yyyyddMM"); // Output the formatted date 
+        _time = now.ToString("HHmmss"); // sets the time to the _time Variable
     }
 
 
