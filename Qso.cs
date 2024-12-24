@@ -55,9 +55,6 @@ abstract class Qso
     { "Wyoming", new string[] { "WY", "wy", "Wy", "wY", "Wyoming", "wyoming" } },
     { "DX", new string[] { "DX", "dx", "Dx", "dX", "Dx", "dx", "Dx", "dX" } } // Special case for DX
 };
-
-
-
     protected float _frequency;
     protected int _rstRx;
     protected int _rstTx;
@@ -65,9 +62,10 @@ abstract class Qso
     protected string _callsign; //callsign of rx station
 
     protected string _date; //set with getDateTime()
-
+    
     protected abstract void setRx();
     protected abstract void setTx();
+
 
     protected void setFreq() //get the frequency and assign it to _frequesncy
     {
@@ -165,13 +163,7 @@ abstract class Qso
         Console.Clear();
     }
 
-    public string exportAdif() //generates the standard Adif file for upload to QRZ.com. This is not yet completely correct.
-    {
-        string adifContent = "";
-
-        adifContent += $"<CALL:{_callsign.Length}>{_callsign} <BAND:{_frequency.ToString().Length}>{_frequency} <MODE:USB> <RST_SENT:{_rstTx.ToString().Length}>{_rstTx} <RST_RCVD:{_rstRx.ToString().Length}>{_rstRx} <QTH:{_state.Length}>{_state} <TIME_ON:{_date.Length}>{_date}\n";
-
-        return adifContent;
-    }
+    //generates the standard Adif file for upload to QRZ.com. This is not yet completely correct.
+    public abstract string exportAdif();
 
 }
