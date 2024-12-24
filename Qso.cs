@@ -111,7 +111,7 @@ abstract class Qso
     protected void setTime() //returns the date and time for the log
     {
         DateTime now = DateTime.UtcNow; // Format the DateTime object to the desired format 
-        _date = now.ToString("dd, MMMM, yyyy - HH:mm:ss"); // Output the formatted date
+        _date = now.ToString("yymmdd HHmmss"); // Output the formatted date 
     }
 
 

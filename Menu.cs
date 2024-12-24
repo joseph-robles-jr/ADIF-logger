@@ -48,7 +48,7 @@ public class Menu()
                 case 4:
                     Console.Write("What do you want this .ADI file to be called? : ");
                     path = Console.ReadLine();
-                    writelog.WriteToDisk(qsoArray.returnAllAdif(), path + ".adi");
+                    writelog.WriteToDisk(qsoArray.returnAllAdi(), path + ".adi");
                     Console.Clear();
                     break;
             

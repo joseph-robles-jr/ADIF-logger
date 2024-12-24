@@ -59,15 +59,15 @@ public class QSOarray
         return wordWall;
     }
 
-    public string returnAllAdif()
+    public string returnAllAdi()
     {
-        string adifHeader = "ADIF Export\n\n";
+        string adifHeader = "ADIF Export\n";
         string adifContent = "";
         foreach (Qso qso in _qsoLists)
         {
-            adifContent += qso.exportAdif();
+            adifContent += qso.exportAdi();
         }
-        return adifHeader + adifContent + "<EOR>\n";
+        return adifHeader + adifContent;
 
     }
 }

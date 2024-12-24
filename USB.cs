@@ -24,7 +24,7 @@ class USB : Qso
 {
     string adifContent = "";
 
-    adifContent += $"<CALL:{_callsign.Length}>{_callsign}<BAND:{_frequency.ToString().Length}>{_frequency}<MODE:{_mode.Length}>{_mode}<RST_SENT:{_rstTx.ToString().Length}>{_rstTx}<RST_RCVD:{_rstRx.ToString().Length}>{_rstRx}<QTH:{_state.Length}>{_state}<TIME_ON:15>{_date}\n";
+    adifContent += $"<CALL:{_callsign.Length}>{_callsign}<BAND:{_frequency.ToString().Length}>{_frequency}<MODE:{_mode.Length}>{_mode}<RST_SENT:{_rstTx.ToString().Length}>{_rstTx}<RST_RCVD:{_rstRx.ToString().Length}>{_rstRx}<QTH:{_state.Length}>{_state}<TIME_ON:15>{_date}<EOR>\n";
 
     return adifContent;
 }
