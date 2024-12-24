@@ -20,7 +20,7 @@ class AM : Qso
 
     }
 
-    public override string exportAdif()
+    public override string exportAdi()
     {
         string adifContent = "";
 

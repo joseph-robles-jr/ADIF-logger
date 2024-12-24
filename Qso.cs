@@ -164,6 +164,6 @@ abstract class Qso
     }
 
     //generates the standard Adif file for upload to QRZ.com. This is not yet completely correct.
-    public abstract string exportAdif();
+    public abstract string exportAdi();
 
 }

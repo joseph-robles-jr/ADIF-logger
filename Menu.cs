@@ -16,7 +16,7 @@ public class Menu()
             Console.WriteLine("1. Create New QSO");
             Console.WriteLine("2. List all QSS's");
             Console.WriteLine("3. Write .TXT file to Disk");
-            Console.WriteLine("4. Write .ADIF file to Disk");
+            Console.WriteLine("4. Write .ADI file to Disk");
             Console.WriteLine("6. Exit");
             Console.Write("Select an option: ");
 
@@ -46,9 +46,9 @@ public class Menu()
                     break;
                 
                 case 4:
-                    Console.Write("What do you want this .ADIF file to be called? : ");
+                    Console.Write("What do you want this .ADI file to be called? : ");
                     path = Console.ReadLine();
-                    writelog.WriteToDisk(qsoArray.returnAllAdif(), path + ".adif");
+                    writelog.WriteToDisk(qsoArray.returnAllAdif(), path + ".adi");
                     Console.Clear();
                     break;
             

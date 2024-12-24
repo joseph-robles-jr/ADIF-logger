@@ -12,7 +12,7 @@ class FM : Qso
         _rstTx = 0;
     }
 
-    public override string exportAdif()
+    public override string exportAdi()
     {
         string adifContent = "";
 
