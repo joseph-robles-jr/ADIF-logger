@@ -4,3 +4,5 @@
 *.props
 *.obj
 *.pdb
+/obj
+/bin
