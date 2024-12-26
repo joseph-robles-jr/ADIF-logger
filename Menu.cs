@@ -12,6 +12,7 @@ public class Menu()
 
         while (!exit)
         {
+            Console.Clear();
             Console.WriteLine("\nMain Menu:");
             Console.WriteLine("1. Create New QSO");
             Console.WriteLine("2. List all QSS's");
